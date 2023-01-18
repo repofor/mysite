@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background</title>
+</head>
+<body>
+    <video autoplay muted loop id="Video">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <div class="heading1">
+    <h1>Rohit Technologies</h1></div>
+    <div class="heading">
+
+        <h2>Hi... Welcome To Rohit Technologies
+            <br>Making Your Business easier...
+    
+        </h2>
+    <br>
+    <br><br><br><br><br><br><br><br><br>
+        <p >Helping you with Software Solutions to make your business more easier. </p>
+        We are here with our Experienced Software Developers and Integrators to offer you Business Products and IT Services to improve your Business Performance.
+    
+            <p >Dedicated and Experienced Professionals in 30 different locations across the world</p>
+            <br>Since 2002
+            <button id="btn" onclick="btnfunction()">Pause</button>
+    </div>
+    <style>
+        #Video{
+        position: relative;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        }
+        h1{
+            position: absolute;
+            color: rgb(255, 255, 255);
+            width: 70%;
+            right:20%;
+            top:30%;
+            height: 50%;
+            padding:40px;
+            font-size: 100px;
+        }
+        h2{
+            position: absolute;
+            color: rgb(255, 255, 255);
+            width: 70%;
+            right:20%;
+            top:30%;
+            height: 50%;
+            padding:40px;
+            font-size: 40px;
+        }
+        
+
+        h3{
+            position: absolute;
+            color: rgb(231, 224, 17);
+            width: 70%;
+            right:20%;
+            top:30%;
+            height: 50%;
+            padding:40px;
+            font-size: 50px;
+        }
+
+        .heading{
+        position: absolute;
+        background: rgba(0, 0, 0, 0.311);
+        color: white;
+        width: 70%;
+        right:20%;
+        top:40%;
+        height: 70%;
+        padding:40px;
+        font-size: 30px;
+        }
+
+        #btn {
+            
+        width: 400px;
+        font-size: 30px;
+        padding: 10px;
+        border: none;
+        background: rgba(0, 0, 0, 0.586);
+        color: white;
+        cursor: pointer;
+       }
+        </style>
+
+        <script>
+            var video = document.getElementById("Video");
+            var btn = document.getElementById("btn");
+
+            function btnfunction()
+            {
+                if(video.paused)
+                {
+                    video.play();
+                    btn.innerHTML="Pause";
+                }
+                else{
+                    video.pause();
+                    btn.innerHTML="Play";
+                }
+            }
+
+        </script>
+
+</body>
+</html>
+
